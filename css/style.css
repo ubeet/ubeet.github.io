@@ -18,8 +18,8 @@
     width: 100%;
     height: 100px;
     display: flex;
+    border-style: solid;
     align-items: center;
-    background: aqua;
 }
 
 .nav__link{
@@ -31,30 +31,23 @@
 
 
 .left__menu{
-    line-height: 2;
-    padding-left: 50px;
-    padding-right: 50px;
-    background: brown;
+    border-style: solid;
     height: 400px;
     width: 15%;
+    display: inline-block;
 }
 
 .top__menu{
-    line-height: 3;
-    padding-left: 50px;
-    padding-right: 50px;
-    background: darkblue;
+    border-style: solid;
     width: 100%;
     height: 10%;
 }
 
 .right__menu{
-    line-height: 2;
-    padding-left: 50px;
-    padding-right: 50px;
-    background: chartreuse;
+    border-style: solid;
     width: 20%;
     height: 100%;
+    display: inline-block;
 }
 
 .container{
@@ -63,19 +56,13 @@
 }
 
 .center__menu{
-    line-height: 3;
-    padding-left: 50px;
-    padding-right: 50px;
-    background: blueviolet;
-    height: 80%;
+    border-style: solid;
+    height: 78%;
     width: 100%;
 }
 
 .centerbottom__menu{
-    line-height: 3;
-    padding-left: 50px;
-    padding-right: 50px;
-    background: darkgoldenrod;
+    border-style: solid;
     height: 20%;
     width: 100%;
 }
@@ -83,10 +70,12 @@
 .main_menu{
     display: flex;
     width: 100%;
+    height: 80%;
 }
 .s1{
     height: 400px;
     width: 85%;
+    display: inline-block;
 }
 
 .s2{
@@ -98,4 +87,5 @@
 .s3{
     width: 80%;
     height: 100%;
+    display: inline-block;
 }
