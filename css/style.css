@@ -1,4 +1,6 @@
 
+
+
 .logo{
     font-size: 30px;
     font-weight: 700;
@@ -35,7 +37,7 @@
     height: 400px;
     width: 15%;
     display: inline-block;
-}
+} 
 
 .top__menu{
     border-style: solid;
@@ -83,9 +85,55 @@
     width: 100%;
     height: 90%;
 }
+.bottom__inner{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-style: solid;
+}
 
 .s3{
     width: 80%;
     height: 100%;
     display: inline-block;
+}
+@media (orientation: portrait) {
+
+    .left__menu{
+        border-style: solid;
+        height: auto;
+        width: 100%;
+    }
+
+    .main_menu{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .s1{
+        display: block;
+        height: 400px;
+        width: 100%;
+    }
+    .s2{
+        display: block;
+        width: 100%;
+        height: 90%;
+    }
+    .s3{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .right__menu {
+        border-style: solid;
+        width: 100%;
+        height: auto;
+    }
+    .container{
+        display: block;
+    }
+    .bottom__inner{
+        margin-top: 60px;
+    }
 }
