@@ -1,139 +1,145 @@
-
-
-
-.logo{
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Calibri", serif;
-    position: center;
-    margin-top: 1%;
-    margin-left: 10%;
-}
-.nav{
-    font-size: 20px;
-    font-family: "Calibri", serif;
-    margin-top: 1%;
-    margin-left: 40%;
-}
-
-.header__inner{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    border-style: solid;
-    align-items: center;
-}
-
-.nav__link{
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 15px;
-}
-
-
-
-.left__menu{
-    border-style: solid;
-    height: 400px;
-    width: 15%;
-    display: inline-block;
-} 
-
 .top__menu{
-    border-style: solid;
+    top: 0;
     width: 100%;
-    height: 10%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    height: 80px;
 }
 
-.right__menu{
-    border-style: solid;
-    width: 20%;
-    height: 100%;
+.bottom__menu{
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background-color: #363636;
+    bottom: 0;
+    left:0;
+    right: 0;
+    margin: auto;
+    height: 120px;
+}
+
+.bottom__menu p{
+    margin: 34px auto;
+    text-align: center;
+    color: white;
+    width: 25%;
+    font-size: 13pt;
+    font-family: Calibri Light;
+}
+
+.wrapper{
+
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.blocks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.block{
+    width: 300px;
+    height: 490px;
+    background-color: white;
+    margin: 0 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.block img{
+    margin-top: 20px;
+}
+
+.h__size{
+    font-size: 45pt;
+}
+
+.h__size2{
+    font-size: 25pt;
+}
+
+.h{
+    font-family: Calibri;
+    color: #066ec9;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.btn{
+    background-color: #f5a442;
+    color: white;
+    font-family: Calibri;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
     display: inline-block;
+    font-size: 16px;
+    padding: 11px 40px;
+    margin-top: 30px;
+    border-radius: 6px;
+    letter-spacing: 2px;
+}
+
+.text{
+    width: 66%;
+}
+.content{
+    padding-bottom: 120px;
+}
+
+.block__txt{
+    margin: 0 15px;
+    font-family: "Calibri Light";
+    font-size: 14pt;
+
+}
+
+.main__txt{
+    font-family: "Calibri Light";
+    font-size: 17pt;
 }
 
 .container{
-    width: 100%;
-    height: 100%;
+    position: relative;
+    min-height: 92.5vh;
 }
 
-.center__menu{
-    border-style: solid;
-    height: 78%;
-    width: 100%;
-}
-
-.centerbottom__menu{
-    border-style: solid;
-    height: 20%;
-    width: 100%;
-}
-
-.main_menu{
-    display: flex;
-    width: 100%;
-    height: 80%;
-}
-.s1{
-    height: 400px;
-    width: 85%;
-    display: inline-block;
-}
-
-.s2{
-    display: flex;
-    width: 100%;
-    height: 90%;
-}
-.bottom__inner{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    border-style: solid;
-}
-
-.s3{
-    width: 80%;
-    height: 100%;
-    display: inline-block;
+body {
+    background-image: url("imgs/img_1.png");
+    background-repeat: no-repeat;
+    background-size: 100% 260px;
+    background-position-y: 480px;
+    background-color: #ebf1ff;
+    margin: 0;
 }
 @media (orientation: portrait) {
+    .blocks{
+        display: block;
 
-    .left__menu{
-        border-style: solid;
-        height: auto;
-        width: 100%;
+    }
+    .block{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .text{
+        width: 90%;
     }
 
-    .main_menu{
-        display: block;
-        width: 100%;
-        height: auto;
+    .bottom__menu p{
+        width: 60%;
     }
-    .s1{
-        display: block;
-        height: 400px;
-        width: 100%;
-    }
-    .s2{
-        display: block;
-        width: 100%;
-        height: 90%;
-    }
-    .s3{
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-    .right__menu {
-        border-style: solid;
-        width: 100%;
-        height: auto;
-    }
-    .container{
-        display: block;
-    }
-    .bottom__inner{
-        margin-top: 60px;
-    }
+
 }
